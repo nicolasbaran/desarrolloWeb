@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>The Intellectual House - Tienda de Libros</title>
+</head>
+<body>
+
+
+    <!-- Encabezado -->
+    <header class="header">
+        <h1 class="center">The Intellectual House</h1>
+        <p class="slogan">Desarrolla tu mente con nuestros libros seleccionados</p>
+        <nav>
+            <ul>
+                <li><a href="#">Más vendidos</a></li>
+                <li><a href="#">Géneros</a></li>
+                <li><a href="#">Autores</a></li>
+                <li><a href="#">Carrito de Compras</a></li>
+                <li><a href="#">Mi Cuenta</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección 1: Carrusel de libros más vendidos -->
+    <section class="carousel-section">
+        <h2 class="center">Lo más vendido</h2>
+        <div class="carousel-container">
+            <input type="radio" name="carousel" id="book1" checked>
+            <input type="radio" name="carousel" id="book2">
+            <input type="radio" name="carousel" id="book3">
+
+            <div class="carousel-cards">
+                <div class="card">
+                    <img src="images/carnegieBook.jpg" alt="Cómo ganar amigos e influir sobre las personas">
+                    <h3>Cómo ganar amigos e influir sobre las personas - Dale Carnegie</h3>
+                    <p>Este libro te enseña cómo conectar con las personas y mejorar tus habilidades interpersonales.</p>
+                    <p class="price">$19.99</p>
+                    <button class="buy-button">Comprar</button>
+                </div>
+                <div class="card">
+                    <img src="images/clearBook.jpg" alt="Hábitos Atómicos">
+                    <h3>Hábitos Atómicos - James Clear</h3>
+                    <p>Una guía práctica sobre cómo construir buenos hábitos y romper los malos.</p>
+                    <p class="price">$14.99</p>
+                    <button class="buy-button">Comprar</button>
+                </div>
+                <div class="card">
+                    <img src="images/hardyBook.jpg" alt="El Efecto Compuesto">
+                    <h3>El Efecto Compuesto - Darren Hardy</h3>
+                    <p>Darren Hardy te enseña cómo los pequeños pasos diarios pueden generar grandes cambios.</p>
+                    <p class="price">$16.99</p>
+                    <button class="buy-button">Comprar</button>
+                </div>
+            </div>
+
+            <!-- Botones de navegación -->
+            <div class="carousel-navigation">
+                <label for="book1" class="nav-button"></label>
+                <label for="book2" class="nav-button"></label>
+                <label for="book3" class="nav-button"></label>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección 2: Carrusel de libros destacados del mes -->
+    <section class="carousel-section">
+        <h2 class="center">Destacados del mes</h2>
+        <div class="carousel-container">
+            <input type="radio" name="carousel2" id="book4" checked>
+            <input type="radio" name="carousel2" id="book5">
+            <input type="radio" name="carousel2" id="book6">
+
+            <div class="carousel-cards">
+                <div class="card">
+                    <img src="images/holidayBook.jpg" alt="El Obstáculo es el Camino">
+                    <h3>El Obstáculo es el Camino - Ryan Holiday</h3>
+                    <p>Ryan Holiday te muestra cómo los obstáculos pueden convertirse en oportunidades de éxito.</p>
+                    <p class="price">$17.99</p>
+                    <button class="buy-button">Comprar</button>
+                </div>
+                <div class="card">
+                    <img src="images/muskBook.jpg" alt="Elon Musk">
+                    <h3>Elon Musk - Walter Isaacson</h3>
+                    <p>Biografía de Elon Musk que detalla su vida y carrera.</p>
+                    <p class="price">$21.99</p>
+                    <button class="buy-button">Comprar</button>
+                </div>
+                <div class="card">
+                    <img src="images/petersonBook.jpg" alt="Más allá del orden">
+                    <h3>Más allá del orden - Jordan Peterson</h3>
+                    <p>Jordan Peterson explora 12 nuevas reglas para enfrentar el caos.</p>
+                    <p class="price">$18.99</p>
+                    <button class="buy-button">Comprar</button>
+                </div>
+            </div>
+
+            <!-- Botones de navegación -->
+            <div class="carousel-navigation">
+                <label for="book4" class="nav-button"></label>
+                <label for="book5" class="nav-button"></label>
+                <label for="book6" class="nav-button"></label>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección 3: Elige tu Producto -->
+    <section class="product-selection">
+        <h2 class="center">Elige tu Producto</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="images/holidayBook.jpg" alt="El Obstáculo es el Camino - Ryan Holiday">
+                <h3>El Obstáculo es el Camino - Ryan Holiday</h3>
+                <p>Ryan Holiday explica cómo los obstáculos que enfrentamos pueden ser nuestras mayores oportunidades de éxito.</p>
+                <p class="price">$17.99</p>
+                <button class="buy-button">Comprar</button>
+            </div>
+            <div class="product-card">
+                <img src="images/hardyBook.jpg" alt="El Efecto Compuesto - Darren Hardy">
+                <h3>El Efecto Compuesto - Darren Hardy</h3>
+                <p>El esfuerzo diario y los pequeños pasos acumulados pueden generar grandes cambios.</p>
+                <p class="price">$16.99</p>
+                <button class="buy-button">Comprar</button>
+            </div>
+            <div class="product-card">
+                <img src="images/petersonBook.jpg" alt="Más allá del orden - Jordan Peterson">
+                <h3>Más allá del orden - Jordan Peterson</h3>
+                <p>12 nuevas reglas para enfrentar el caos.</p>
+                <p class="price">$18.99</p>
+                <button class="buy-button">Comprar</button>
+            </div>
+            <div class="product-card">
+                <img src="images/carnegieBook.jpg" alt="Cómo ganar amigos e influir sobre las personas - Dale Carnegie">
+                <h3>Cómo ganar amigos e influir sobre las personas - Dale Carnegie</h3>
+                <p>Este libro te enseña cómo conectar con las personas.</p>
+                <p class="price">$19.99</p>
+                <button class="buy-button">Comprar</button>
+            </div>
+            <div class="product-card">
+                <img src="images/muskBook.jpg" alt="Elon Musk - Walter Isaacson">
+                <h3>Elon Musk - Walter Isaacson</h3>
+                <p>Biografía de Elon Musk, detallando su carrera.</p>
+                <p class="price">$21.99</p>
+                <button class="buy-button">Comprar</button>
+            </div>
+            <div class="product-card">
+                <img src="images/clearBook.jpg" alt="Hábitos Atómicos - James Clear">
+                <h3>Hábitos Atómicos - James Clear</h3>
+                <p>Atomic Habits es una guía práctica sobre cómo construir buenos hábitos.</p>
+                <p class="price">$14.99</p>
+                <button class="buy-button">Comprar</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 The Intellectual House. Todos los derechos reservados.</p>
+            <nav class="footer-nav">
+                <a href="#">Política de Privacidad</a> | 
+                <a href="#">Términos y Condiciones</a> | 
+                <a href="#">Contacto</a>
+            </nav>
+        </div>
+    </footer>
+
+</body>
+</html>
