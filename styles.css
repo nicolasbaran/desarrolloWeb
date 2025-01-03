@@ -1,14 +1,14 @@
 /* Variables de colores */ 
 :root {
-    --bg-gradient: radial-gradient(circle, #660000, #990033); /* Degradado radial de bordó oscuro a bordó claro */
-    --primary-color: #4a90e2; /* Azul suave */
-    --secondary-color: #ffffff; /* Blanco para texto y detalles */
-    --cta-color: #38b6ff; /* Azul claro para CTA */
-    --cta-hover-color: #ffffff; /* Botones hover en blanco */
-    --section-bg: #f2f5f7; /* Fondo gris muy claro para secciones */
-    --text-color: #2c3e50; /* Texto gris oscuro */
-    --error-color: #ff6b6b; /* Rojo suave */
-    --gold-color: #d4af37; /* Dorado */
+    --bg-gradient: radial-gradient(circle, #5a0000, #8a0033); /* Degradado radial mejorado */
+    --primary-color: #3b82d1; /* Azul optimizado */
+    --secondary-color: #fafafa; /* Blanco sutil */
+    --cta-color: #2aa8ff; /* Azul claro más vibrante */
+    --cta-hover-color: #eaeaea; /* Hover en gris claro */
+    --section-bg: #eef1f3; /* Fondo gris más claro */
+    --text-color: #273546; /* Gris oscuro optimizado */
+    --error-color: #e05656; /* Rojo mejorado */
+    --gold-color: #cfae30; /* Dorado optimizado */
 }
 
 /* Reset básico */
@@ -28,121 +28,121 @@ body {
 
 /* Encabezado */
 .header {
-    background: white; /* Encabezado blanco */
-    padding: 25px 40px;
+    background: #fff; /* Blanco neutro */
+    padding: 30px 45px;
     text-align: center;
     color: var(--text-color);
-    border-radius: 15px;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
-    margin: 30px auto;
-    max-width: 1200px;
-    transition: all 0.3s ease;
+    border-radius: 18px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    margin: 35px auto;
+    max-width: 1180px;
+    transition: all 0.4s ease;
 }
 
 .header:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    transform: translateY(-7px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
 }
 
 .header h1 {
-    font-size: 2.6rem; /* Títulos */
+    font-size: 2.8rem; /* Ajuste de títulos */
     font-weight: 800;
-    margin-bottom: 12px;
+    margin-bottom: 14px;
     text-transform: uppercase;
-    letter-spacing: 2px;
-    animation: goldenAnimation 5s linear infinite; /* Animación dorada ajustada a 5 segundos */
-    color: transparent; /* Para hacer que el texto sea transparente */
-    background: linear-gradient(90deg, #d4af37, #ffcc00); /* Degradado dorado a amarillo */
-    background-clip: text; /* Para que el degradado se aplique al texto */
-    -webkit-background-clip: text; /* Compatibilidad con webkit */
+    letter-spacing: 2.5px;
+    animation: goldenAnimation 4s linear infinite; /* Animación dorada ajustada */
+    color: transparent;
+    background: linear-gradient(90deg, #cfae30, #ffcc66); /* Degradado dorado a amarillo suave */
+    background-clip: text;
+    -webkit-background-clip: text;
 }
 
 /* Subtítulo en negro */
 .header .slogan {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     font-weight: 400;
-    margin-bottom: 25px;
-    color: #000000; /* Subtítulo en negro */
+    margin-bottom: 27px;
+    color: #1d1d1d; /* Subtítulo más oscuro */
 }
 
 /* Efecto hover para los botones del Header */
 .header nav ul li a:hover {
-    background: var(--cta-hover-color); /* Botones hover en blanco */
-    color: var(--gold-color); /* Texto en dorado al hacer hover */
-    border: 2px solid var(--gold-color); /* Borde dorado en hover */
+    background: var(--cta-hover-color);
+    color: var(--gold-color);
+    border: 2px solid var(--gold-color);
 }
 
 .header nav ul {
     display: flex;
     justify-content: center;
     list-style: none;
-    gap: 25px;
+    gap: 28px;
 }
 
 .header nav ul li a {
     text-decoration: none;
-    color: var(--gold-color); /* Botones en dorado */
+    color: var(--gold-color);
     font-weight: 600;
     font-size: 1.2rem;
-    padding: 12px 25px;
-    border-radius: 25px;
-    border: 2px solid transparent; /* Sin borde por defecto */
+    padding: 12px 28px;
+    border-radius: 30px;
+    border: 2px solid transparent;
     transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
 }
 
 /* Sección de Carrusel */
 .carousel-section {
-    padding: 40px 20px;
-    margin-bottom: 60px;
-    border-radius: 10px;
-    max-width: 1200px;
-    margin: 40px auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 42px 25px;
+    margin-bottom: 65px;
+    border-radius: 12px;
+    max-width: 1180px;
+    margin: 42px auto;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
     background: var(--section-bg);
 }
 
 /* Estilos de títulos */
 h2 {
     text-align: center;
-    font-size: 2rem;
-    color: var(--gold-color); /* Dorado */
+    font-size: 2.2rem;
+    color: var(--gold-color);
     text-transform: uppercase;
-    margin-bottom: 20px;
-    letter-spacing: 1px;
+    margin-bottom: 22px;
+    letter-spacing: 1.2px;
     transition: color 0.3s ease;
 }
 
 .section-title {
-    animation: goldenAnimation 5s linear infinite; /* Animación dorada automatizada ajustada a 5 segundos */
+    animation: goldenAnimation 4s linear infinite;
 }
 
 @keyframes goldenAnimation {
     0% {
-        color: #d4af37; /* Dorado */
+        color: #cfae30;
     }
     25% {
-        color: #f7d74d; /* Amarillo claro */
+        color: #f5d66a;
     }
     50% {
-        color: #b8860b; /* Dorado más oscuro */
+        color: #a37b1b;
     }
     75% {
-        color: #ffcc00; /* Amarillo claro */
+        color: #ffc94a;
     }
     100% {
-        color: #d4af37; /* Dorado */
+        color: #cfae30;
     }
 }
 
 /* Contenedor del Carrusel */
 .carousel-container {
     position: relative;
-    width: 90%;
-    max-width: 1000px;
+    width: 88%;
+    max-width: 980px;
     margin: 0 auto;
     overflow: hidden;
-    border-radius: 15px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    border-radius: 16px;
+    box-shadow: 0 10px 18px rgba(0, 0, 0, 0.12);
     background-color: var(--secondary-color);
 }
 
@@ -153,88 +153,90 @@ h2 {
 
 .card {
     min-width: 100%;
-    padding: 30px;
+    padding: 35px;
     text-align: center;
     background-color: var(--secondary-color);
-    border-radius: 15px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 16px;
+    box-shadow: 0 7px 14px rgba(0, 0, 0, 0.09);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
 .card:hover {
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.18);
 }
 
 .card img {
-    max-width: 60%;
+    max-width: 62%;
     height: auto;
-    border-radius: 15px;
-    margin-bottom: 15px;
-    transition: transform 0.1s ease;
+    border-radius: 16px;
+    margin-bottom: 16px;
+    transition: transform 0.2s ease;
 }
 
 .card img:hover {
-    transform: scale(1.05); /* Zoom en hover */
+    transform: scale(1.08);
 }
 
 h3 {
-    font-size: 1.6rem;
-    margin-bottom: 15px;
-    color: var(--gold-color); /* Dorado */
+    font-size: 1.7rem;
+    margin-bottom: 16px;
+    color: var(--gold-color);
 }
 
 .card p {
     font-size: 1rem;
-    color: #555;
-    margin-bottom: 10px;
+    color: #5a5a5a;
+    margin-bottom: 12px;
 }
 
 p.price {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     font-weight: bold;
     color: var(--error-color);
-    margin: 15px 0;
+    margin: 17px 0;
 }
 
 /* Botones con hover en degradado bordó */
 .buy-button {
-    padding: 12px 25px;
-    font-size: 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    padding: 14px 28px;
+    font-size: 1.1rem;
     font-weight: bold;
-    color: var(--gold-color); /* Texto dorado */
-    background-color: var(--secondary-color); /* Fondo blanco */
-    border: 2px solid var(--gold-color); /* Borde dorado por defecto */
-    border-radius: 20px;
+    color: var(--gold-color);
+    background-color: var(--secondary-color);
+    border: 2px solid var(--gold-color);
+    border-radius: 22px;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
+    transition: background-color 0.4s ease, transform 0.4s ease, color 0.4s ease;
 }
 
 .buy-button:hover {
-    background: var(--cta-hover-color); /* Degradado bordó en hover */
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    color: var(--gold-color); /* Texto dorado en hover */
+    background: var(--cta-hover-color);
+    transform: translateY(-6px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    color: var(--gold-color);
 }
 
 /* Navegación del carrusel */
 .carousel-navigation {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 22px;
 }
 
 .nav-button {
+    transition: background-color 0.3s ease, color 0.3s ease;
     display: inline-block;
-    width: 15px;
-    height: 15px;
-    margin: 0 5px;
-    background-color: #bbb;
+    width: 16px;
+    height: 16px;
+    margin: 0 6px;
+    background-color: #aaa;
     border-radius: 50%;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .nav-button:hover {
-    transform: scale(1.2);
+    transform: scale(1.25);
     background-color: var(--secondary-color);
 }
 
@@ -246,65 +248,65 @@ input[name="carousel2"] {
 
 /* Sección de Producto */
 .product-selection {
-    padding: 40px 20px;
+    padding: 42px 25px;
     background: var(--section-bg);
-    max-width: 1200px;
-    margin: 40px auto;
+    max-width: 1180px;
+    margin: 42px auto;
     text-align: center;
-    border-radius: 10px;
+    border-radius: 12px;
 }
 
 .product-selection h2 {
-    font-size: 2rem;
-    color: var(--gold-color); /* Dorado */
+    font-size: 2.2rem;
+    color: var(--gold-color);
     text-transform: uppercase;
-    margin-bottom: 30px;
+    margin-bottom: 32px;
 }
 
 /* Grid de Productos */
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 2 filas de 3 columnas */
-    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
 }
 
 /* Tarjetas de Producto */
 .product-card {
     background: var(--secondary-color);
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 12px;
+    padding: 22px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
 .product-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    transform: scale(1.08);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.14);
 }
 
 .product-card img {
-    max-width: 100%;
-    border-radius: 10px;
-    margin-bottom: 15px;
-    transition: transform 0.1s ease; /* Menos zoom en la imagen */
+    max-width: 98%;
+    border-radius: 12px;
+    margin-bottom: 16px;
+    transition: transform 0.15s ease;
 }
 
 .product-card img:hover {
-    transform: scale(1.05); /* Zoom ligero en la imagen */
+    transform: scale(1.06);
 }
 
 .product-card h3 {
-    font-size: 1.5rem;
-    color: var(--gold-color); /* Dorado */
+    font-size: 1.6rem;
+    color: var(--gold-color);
 }
 
 .product-card p {
     color: #555;
-    margin-bottom: 15px;
+    margin-bottom: 16px;
 }
 
 .product-card .price {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: bold;
     color: var(--error-color);
 }
@@ -312,15 +314,15 @@ input[name="carousel2"] {
 /* Footer */
 footer {
     background-color: var(--bg-gradient);
-    padding: 20px 0;
+    padding: 24px 0;
     color: var(--secondary-color);
     text-align: center;
-    border-radius: 15px;
-    margin-top: 40px;
+    border-radius: 18px;
+    margin-top: 48px;
 }
 
 footer p {
-    margin: 5px 0;
+    margin: 6px 0;
 }
 
 footer a {
@@ -330,4 +332,9 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+button:hover {
+    transform: scale(1.06);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.18);
 }
